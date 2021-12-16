@@ -25,10 +25,11 @@ export default function Content({ toDos, setToDo }) {
     toDos.splice(indexItem, 1);
     seDeleteIndex(indexItem);
   };
+  const clearToDo = ()=>{
+    setToDo([])
+  }
   useEffect(() => {
     setToDo(toDos);
-    console.log("effect : content ");
-    console.log("todos : ", toDos);
   }, [status, index,toDos]);
   return (
     <div>
@@ -89,7 +90,7 @@ export default function Content({ toDos, setToDo }) {
           </ul>
 
           {/* <!-- Hidden if no completed items are left ↓ --> */}
-          <button className="clear-completed">Clear completed</button>
+          <button onClick={clearToDo} className="clear-completed">Clear completed</button>
         </footer>
 
 

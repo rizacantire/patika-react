@@ -16,7 +16,6 @@ export default function ToDoList({toDos,setToDo}) {
             )
         }))
         setDefaultToDo(filtered)
-        console.log("buradayız");
     }
     const onSubmit = (e)=>{
         e.preventDefault()
@@ -24,8 +23,6 @@ export default function ToDoList({toDos,setToDo}) {
         setDefaultValue(initialFormValues)
     
         setFiltered(toDos)
-        console.log(toDos);
-        console.log(filtered);
         
     }
 
@@ -33,9 +30,6 @@ export default function ToDoList({toDos,setToDo}) {
     useEffect(() => {
         setToDo(toDos)
         setDefaultToDo(toDos)
-        console.log("effect : filter ");
-        console.log("filtered : " ,filtered);
-        console.log("todos : ",toDos);
 
     }, [filtered])
   return (
