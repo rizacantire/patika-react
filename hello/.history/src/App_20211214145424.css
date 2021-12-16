@@ -1,0 +1,23 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+ 
+}
+
+#container{
+  width: 400px;
+  background-color: aliceblue;
+  padding:20px
+}
+input{
+  width:  100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
