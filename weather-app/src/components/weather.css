@@ -1,0 +1,12 @@
+.b-card:first-child {
+    border: 5px solid #30b44c ;
+
+  }
+
+*{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-transform: capitalize;
+}
+  
